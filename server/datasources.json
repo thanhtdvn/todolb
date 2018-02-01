@@ -1,7 +1,8 @@
 {
   "db": {
     "name": "db",
-    "connector": "memory"
+    "connector": "memory",
+    "file":"db.json"
   },
   "MyEmailDatasource": {
     "name": "MyEmailDatasource",
@@ -16,8 +17,8 @@
           "rejectUnauthorized": false
         },
         "auth": {
-          "user": "youremail@gmail.com",
-          "pass": "xxxxxx"
+          "user": "register.thanh@gmail.com",
+          "pass": "icandoit0906"
         }
       }
     ]

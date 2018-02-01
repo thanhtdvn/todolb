@@ -4,7 +4,8 @@
       "loopback/common/models",
       "loopback/server/models",
       "../common/models",
-      "./models"
+      "./models",
+      "cls./node_modules/loopback-component-passport/lib/models"
     ],
     "mixins": [
       "loopback/common/mixins",
@@ -44,5 +45,17 @@
   },
   "Email": {
     "dataSource": "MyEmailDatasource"
+  },
+  "TrdAccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "AccountCredential": {
+    "dataSource": "db",
+    "public": false
+  },
+  "AccountIdentity": {
+    "dataSource": "db",
+    "public": false
   }
 }

@@ -1,0 +1,32 @@
+{
+  "ids": {
+    "User": 1,
+    "AccessToken": 1,
+    "ACL": 1,
+    "RoleMapping": 1,
+    "Role": 1,
+    "Account": 4,
+    "TrdAccessToken": 15,
+    "AccountCredential": 1,
+    "AccountIdentity": 2
+  },
+  "models": {
+    "User": {},
+    "AccessToken": {},
+    "ACL": {},
+    "RoleMapping": {},
+    "Role": {},
+    "Account": {
+      "1": "{\"username\":\"thanhtdvn\",\"password\":\"$2a$10$tUxEQ75TCa5LgxJdzxMhZOWnlFchBqEt7P3uli4OKUE6oPaLSlIQy\",\"email\":\"truongducthanh88@gmail.com\",\"id\":1,\"emailVerified\":false}",
+      "3": "{\"password\":\"$2a$10$yjgs5rdHWdDhYzYsTBNwuOEQ4Xcd95J6cb9C7dPOOFNgrAhtV2sYK\",\"email\":\"register.thanh@gmail.com\",\"id\":3,\"verificationToken\":null,\"emailVerified\":true,\"username\":\"thanhtd\"}"
+    },
+    "TrdAccessToken": {
+      "ALEoHCBmezoZpGjBnH9BvggzSDJM1AR0xDvuSEbkXW5Lc6kTYsXq4sdS8SRtfIwd": "{\"id\":\"ALEoHCBmezoZpGjBnH9BvggzSDJM1AR0xDvuSEbkXW5Lc6kTYsXq4sdS8SRtfIwd\",\"ttl\":1209600,\"created\":\"2018-01-28T14:27:50.046Z\",\"userId\":1}",
+      "yTC9WYVM1mnfidgPr5gCeWggOHljmausHguBwBPS9kvNvcnpueuRYVxOwAXG53Pk": "{\"id\":\"yTC9WYVM1mnfidgPr5gCeWggOHljmausHguBwBPS9kvNvcnpueuRYVxOwAXG53Pk\",\"ttl\":1209600,\"created\":\"2018-01-28T15:43:42.635Z\",\"userId\":3}"
+    },
+    "AccountCredential": {},
+    "AccountIdentity": {
+      "1": "{\"provider\":\"facebook\",\"authScheme\":\"oAuth 2.0\",\"externalId\":\"1654317211294353\",\"profile\":{\"id\":\"1654317211294353\",\"name\":{\"familyName\":\"Truong\",\"givenName\":\"Thanh\"},\"gender\":\"male\",\"profileUrl\":\"https://www.facebook.com/app_scoped_user_id/1654317211294353/\",\"emails\":[{\"value\":\"truongducthanh88@yahoo.com\"}],\"provider\":\"facebook\",\"_raw\":\"{\\\"gender\\\":\\\"male\\\",\\\"link\\\":\\\"https:\\\\/\\\\/www.facebook.com\\\\/app_scoped_user_id\\\\/1654317211294353\\\\/\\\",\\\"locale\\\":\\\"en_US\\\",\\\"last_name\\\":\\\"Truong\\\",\\\"first_name\\\":\\\"Thanh\\\",\\\"timezone\\\":7,\\\"verified\\\":true,\\\"email\\\":\\\"truongducthanh88\\\\u0040yahoo.com\\\",\\\"updated_time\\\":\\\"2017-10-26T16:13:50+0000\\\",\\\"id\\\":\\\"1654317211294353\\\"}\",\"_json\":{\"gender\":\"male\",\"link\":\"https://www.facebook.com/app_scoped_user_id/1654317211294353/\",\"locale\":\"en_US\",\"last_name\":\"Truong\",\"first_name\":\"Thanh\",\"timezone\":7,\"verified\":true,\"email\":\"truongducthanh88@yahoo.com\",\"updated_time\":\"2017-10-26T16:13:50+0000\",\"id\":\"1654317211294353\"}},\"credentials\":{\"accessToken\":\"EAAIWon9pdwoBAEm6jlJZCjsyOPVDNi9MyzltopG9NqyieIte1shbeUmnKiNr66sWHi8lIoli5IzSV4kt48ZC10LsfaZBfTWduztVHFZBXQvC5o3bwb9jo61Gxbp0oXKtJH5AvOwDwKRqMEwdE48iw8qHDZBWnEcrNNzZC1X3YIIQZDZD\"},\"created\":\"2018-01-28T13:30:31.959Z\",\"modified\":\"2018-01-28T14:27:50.039Z\",\"userId\":1,\"id\":1}"
+    }
+  }
+}

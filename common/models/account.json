@@ -10,7 +10,23 @@
   "properties": {},
   "restrictResetPasswordTokenScope": true,
   "validations": [],
-  "relations": {},
+  "relations": {
+    "accessTokens": {
+      "type": "hasMany",
+      "model": "TrdAccessToken",
+      "foreignKey": "userId"
+    },
+    "identities": {
+      "type": "hasMany",
+      "model": "AccountIdentity",
+      "foreignKey": "userId"
+    },
+    "credentials": {
+      "type": "hasMany",
+      "model": "AccountCredential",
+      "foreignKey": "userId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

@@ -1,0 +1,12 @@
+<main>
+        <h1>Index</h1>
+        <% if (user) { %>
+            <h2><%= user.name %></h2>
+            <br/>
+            <br/>
+              <a href="/logout?access_token=<%= accessToken %>">Log out</a>
+          <% } %>
+          
+  
+  
+  </main>

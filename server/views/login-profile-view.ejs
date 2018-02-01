@@ -1,0 +1,18 @@
+<main>
+        <h1>Index</h1>
+        <% if (user) { %>
+            <h2><%= user.name %></h2>
+            <br/>
+            <p>
+                <%- JSON.stringify(user) %>
+            </p>
+            <p>
+              Link Accounts:
+              <br>
+              <a href="/link/facebook">facebook</a>
+            <br/>
+              <a href="/auth/logout">Log out</a>
+          <% } %>
+          
+          <h3><%- JSON.stringify(accessToken) %></h3>
+  </main>
