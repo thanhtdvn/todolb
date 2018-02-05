@@ -1,0 +1,32 @@
+<main>
+
+
+<section>
+    <form action="/auth/local" method="post">
+      <fieldset>
+        <legend>Login form</legend>
+        <div>
+          <label for="email">Email:</label>
+          <input type="text" name="email"/>
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <input type="password" name="password"/>
+        </div>
+        <div>
+          <input type="submit" value="Login"/>
+        </div>
+        <br>
+        
+      </fieldset>
+    </form>
+    <% if (messages.error) { %>
+        <p>
+            <span style="color: red"><%= messages.error %></span>
+        </p>
+    <% } %>
+  </section>
+
+</main>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>

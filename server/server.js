@@ -106,7 +106,7 @@ app.get('/auth/account', ensureLoggedIn('/login'), function(req, res, next) {
 });
 
 app.get('/local', function(req, res, next) {
-  res.render('pages/local', {
+  res.render('local-view', {
     user: req.user,
     url: req.url,
   });
@@ -120,14 +120,14 @@ app.get('/ldap', function(req, res, next) {
 });
 
 app.get('/signup', function(req, res, next) {
-  res.render('pages/signup', {
+  res.render('signup-view', {
     user: req.user,
     url: req.url,
   });
 });
 
 app.post('/signup', function(req, res, next) {
-  var User = app.models.user;
+  var User = app.models.Account;
 
   var newUser = {};
   newUser.email = req.body.email.toLowerCase();

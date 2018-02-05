@@ -1,0 +1,17 @@
+<main>
+    <form action="/signup" method="post">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" name="username" placeholder="Enter your username">
+        <label for="email">Email</label>
+        <input type="text" class="form-control" name="email" placeholder="Enter your email">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" name="password" placeholder="Password">
+        <input type="submit" value="Submit">
+        <br>
+        <% if(messages.error) { %>
+            <p>
+                <span><%= messages.error %></span>
+            </p>
+        <% }%>
+    </form>
+</main>

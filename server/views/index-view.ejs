@@ -5,7 +5,11 @@
             <br/>
             <br/>
               <a href="/logout?access_token=<%= accessToken %>">Log out</a>
-          <% } %>
+          <% } else { %>
+            <a href="/signup">Đăng ký tài khoản Local</a> 
+            <br>
+            <a href="/login">Đăng nhập bằng tài khoản Local hoặc đăng nhập qua social accounts</a>
+            <% } %>
           
   
   

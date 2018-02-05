@@ -1,18 +1,38 @@
 <main>
         <h1>Index</h1>
+        <%- JSON.stringify(user) %>
+
         <% if (user) { %>
             <h2><%= user.name %></h2>
             <br/>
             <p>
-                <%- JSON.stringify(user) %>
+                Hi <%= user.username %>
+                <br>
+                Email: <%= user.email %>
             </p>
+            <h2>Profiles:</h2>
+            <% for(var i=0; i<user.profiles.length; i++) { %>
+              <p>
+                <%- JSON.stringify(user.profiles[i]) %>
+              </p>
+          <% } %>
+
             <p>
               Link Accounts:
+
+              <h2>Accounts:</h2>
+            <% for(var i=0; i<user.accounts.length; i++) { %>
+              <p>
+                <%- JSON.stringify(user.accounts[i]) %>
+              </p>
+          <% } %>
+
+              <br>
               <br>
               <a href="/link/facebook">facebook</a>
             <br/>
               <a href="/auth/logout">Log out</a>
           <% } %>
           
-          <h3><%- JSON.stringify(accessToken) %></h3>
+          <h3>Token: <%- JSON.stringify(accessToken) %></h3>
   </main>
