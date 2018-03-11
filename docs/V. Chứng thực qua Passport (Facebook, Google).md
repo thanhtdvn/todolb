@@ -161,11 +161,8 @@ Ngoài ra ta cần cài đặt 1 số component khác:
 
 `express-flash` để có thể hiện thị passport errors
 
-`express-session`
+`connect-ensure-login`: middleware đảm bảo user đã được xác thực, trong trường hợp user chưa xác thực -> redirect về trang login.
 
-`connect-ensure-login`
-
-`cookie-parser`
 
 #### Đăng nhập bằng facebook
 Chúng ta đã cài đặt loopback-component-passport ở trên để cho phép xác thực qua passport. Bây giờ để cho phép xác thực qua facebook, ta chỉ cần cài đặt component `passport-facebook` và cấu hình facebook provider ở `providers.json`
@@ -280,9 +277,9 @@ Ngoài ra, cần thay đổi giá trị url callback trong `Valid OAuth redirect
 #### Xác thực qua Google
 Tương tự, để cho phép ứng dụng xác thực qua google, ta cần cài đặt component `passport-google` và cấu hình google provider trong `providers.json`
 
-Cài đặt component `passport-google`
+Cài đặt component `passport-google-oauth`
 
-`npm install passport-google`
+`npm install passport-google-oauth`
 
 Tạo google app:
 
@@ -296,7 +293,7 @@ Update CallBack url tại field `Authorized redirect URIs` giá trị `http://
 
 Cấu hình google provider:
 
-Add cấu hình dưới đây vào `providers.json` và cập nhật clientID và clientSecret của google app vừa tạo ở trêntrên
+Add cấu hình dưới đây vào `providers.json` và cập nhật clientID và clientSecret của google app vừa tạo ở trên
 
 ``` json
 "google-login": {

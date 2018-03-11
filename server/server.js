@@ -98,11 +98,12 @@ app.get('/', function(req, res, next) {
 });
 
 app.get('/auth/account', ensureLoggedIn('/login'), function(req, res, next) {
-  res.render('login-profile-view', {
-    user: req.user,
-    url: req.url,
-    accessToken: req.accessToken
-  });
+  res.redirect(301,'http://localhost:8080/#authcallback?uId='+req.user.id+'&accessToken=' + req.accessToken.id+'&v=1111');
+  // res.render('login-profile-view', {
+  //   user: req.user,
+  //   url: req.url,
+  //   accessToken: req.accessToken
+  // });
 });
 
 app.get('/local', function(req, res, next) {

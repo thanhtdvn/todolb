@@ -9,6 +9,12 @@ var path = require('path');
 module.exports = function(app) {
   var Account = app.models.account;
 
+//verified
+// app.get('/google-auth', function(req, res) {
+//   console.log(req);
+//   //res.redirectUrl('/auth/google');
+//   res.redirect(301,'http://localhost:8080/authcallback?accessToken=' + req.accessToken.id);
+// });
 
   //verified
   app.get('/verified', function(req, res) {
